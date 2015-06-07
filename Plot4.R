@@ -19,7 +19,7 @@ plot4 <- function() {
   datetime <- paste(as.Date(data$Date), data$Time)
   data$Datetime <- as.POSIXct(datetime)
    ##### First create png file and then try to plot on it
-  png("plot4.png", width=580, height=580)
+  png("plot4.png", width=480, height=480)
   
   par(mfrow=c(2,2))
   # 1 plot DT vs Gloab active pow
